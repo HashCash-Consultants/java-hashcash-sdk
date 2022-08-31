@@ -34,13 +34,13 @@ publishing {
 shadowJar {
     manifest {
         attributes (
-            "Implementation-Title" : "hashcash-sdk",
+            "Implementation-Title" : "java-hashcash-sdk",
             "Implementation-Version" : version
         )
     }
     duplicatesStrategy DuplicatesStrategy.EXCLUDE
     archiveClassifier.set('')
-    archiveFileName.set('hashcash-sdk.jar')
+    archiveFileName.set('java-hashcash-sdk.jar')
     relocate 'com.','shadow.com.'
     relocate 'net.','shadow.net.'
     relocate 'javax.annotation', 'shadow.javax.annotation'
